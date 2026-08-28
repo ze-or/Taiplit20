@@ -1,0 +1,6 @@
+[submodule "Taiplit20-pcb/marbastlib"]
+	path = Taiplit20-pcb/marbastlib
+	url = https://github.com/ebastler/marbastlib
+[submodule "Taiplit20-pcb/Type-C.pretty"]
+	path = Taiplit20-pcb/Type-C.pretty
+	url = https://github.com/ai03-2725/Type-C.pretty
