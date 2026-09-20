@@ -24,7 +24,7 @@
           "keep_text_aligned": true,
           "suppress_zeroes": true,
           "text_position": 0,
-          "units_format": 0
+          "units_format": 2
         },
         "fab_line_width": 0.1,
         "fab_text_italic": false,
@@ -60,8 +60,8 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
-          "min_island_area": 9.99999999996,
+          "min_clearance": 0.0,
+          "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -82,7 +82,31 @@
           ""
         ],
         [
+          "starved_thermal|131325000|85650000|726bfaf5-1557-4f1a-b8b7-6c9dd980403a|082cc68e-9fc4-4103-8ac7-dfe2ebe2b322|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|133142500|106706250|726bfaf5-1557-4f1a-b8b7-6c9dd980403a|5a052978-0bde-4a47-821e-4af5591fd5bd|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|134300000|115075000|726bfaf5-1557-4f1a-b8b7-6c9dd980403a|7862ddd3-58dd-433f-9e8c-40de6db2cf68|B.Cu",
+          ""
+        ],
+        [
           "starved_thermal|140100000|112275000|726bfaf5-1557-4f1a-b8b7-6c9dd980403a|20144d71-28ec-4300-a226-abaa0943fd83|B.Cu",
+          ""
+        ],
+        [
+          "unconnected_items|116305000|108265000|F.Cu|4|9d724289-11fd-4b1d-9f2a-3b4f3e7968d8|616eb06d-66c2-4584-8244-be788e9c3467",
+          ""
+        ],
+        [
+          "unconnected_items|117375000|113360000|F.Cu|4|9972ad65-eda1-480e-b422-3200e9aa24bc|a485203f-b107-406f-8576-11b6cf9cae74",
+          ""
+        ],
+        [
+          "unconnected_items|124945000|112445000|F.Cu|4|2893064b-5ca1-4400-95a7-269d602334dd|7e1356fe-c417-4742-a3a6-4f90a2e9cf21",
           ""
         ]
       ],
@@ -168,7 +192,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -220,8 +244,6 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
-        0.2,
         0.2032,
         0.254,
         0.381
@@ -525,7 +547,7 @@
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.254,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -540,29 +562,14 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.1016,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.1524,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "GPIO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.381,
+        "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.381,
         "tuning_profile": "",
@@ -587,46 +594,6 @@
       {
         "netclass": "Power",
         "pattern": "Earth"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col0"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "SWDIO"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "SWDCLK"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "RST"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "row0"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col1"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col2"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col3"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "row1"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "row2"
       }
     ]
   },
@@ -771,7 +738,7 @@
         "uuid": "d27bf40e-f12c-4fc4-af83-8c0622ff945a"
       }
     ],
-    "used_designators": "L1-2,D1-11,BT1,#PWR1-34,C1-9,CH1-10,F1,J1-2,LED1,Q1,R1-11,SW1-2,U1-5,Y1",
+    "used_designators": "L1-2,D1-11,BT1,#PWR1-33,C1-7,CH1-10,F1,J1-2,LED1,Q1,R1-11,SW1-2,U1-4",
     "variants": []
   },
   "sheets": [

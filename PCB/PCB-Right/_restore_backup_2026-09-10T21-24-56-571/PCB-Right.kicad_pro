@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.5,
-          "min_island_area": 9.99999999996,
+          "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -76,16 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|125375000|121110000|3075ec98-9593-4c95-9544-35ebcb275604|817e22a2-bd02-4ff6-a5c3-39d49aabbc35",
-          ""
-        ],
-        [
-          "starved_thermal|140100000|112275000|726bfaf5-1557-4f1a-b8b7-6c9dd980403a|20144d71-28ec-4300-a226-abaa0943fd83|B.Cu",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -168,7 +159,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -220,8 +211,6 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
-        0.2,
         0.2032,
         0.254,
         0.381
@@ -525,7 +514,7 @@
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.254,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -533,36 +522,21 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
+        "track_width": 0.2,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "clearance": 0.1016,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.1524,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "GPIO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.381,
+        "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.381,
         "tuning_profile": "",
@@ -587,46 +561,6 @@
       {
         "netclass": "Power",
         "pattern": "Earth"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col0"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "SWDIO"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "SWDCLK"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "RST"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "row0"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col1"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col2"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "col3"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "row1"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "row2"
       }
     ]
   },
@@ -771,7 +705,7 @@
         "uuid": "d27bf40e-f12c-4fc4-af83-8c0622ff945a"
       }
     ],
-    "used_designators": "L1-2,D1-11,BT1,#PWR1-34,C1-9,CH1-10,F1,J1-2,LED1,Q1,R1-11,SW1-2,U1-5,Y1",
+    "used_designators": "L1-2,D1-11,BT1,#PWR1-33,C1-7,CH1-10,F1,J1-2,LED1,Q1,R1-11,SW1-2,U1-4",
     "variants": []
   },
   "sheets": [
