@@ -8213,7 +8213,7 @@
 		)
 	)
 	(global_label "VDD"
-		(shape bidirectional)
+		(shape output)
 		(at 144.78 85.09 90)
 		(fields_autoplaced yes)
 		(effects
@@ -8224,7 +8224,7 @@
 		)
 		(uuid "174a3ad3-db27-4f71-bfc4-1cd025b08193")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.78 77.3649 90)
+			(at 144.78 78.4762 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8621,7 +8621,7 @@
 		)
 	)
 	(global_label "VDD"
-		(shape bidirectional)
+		(shape input)
 		(at 153.67 58.42 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8632,7 +8632,7 @@
 		)
 		(uuid "95604d05-c013-428d-b65f-7c8e5d602bf1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.3951 58.42 0)
+			(at 160.2838 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8645,7 +8645,7 @@
 		)
 	)
 	(global_label "DCCH"
-		(shape bidirectional)
+		(shape input)
 		(at 139.7 58.42 180)
 		(fields_autoplaced yes)
 		(effects
@@ -8656,7 +8656,7 @@
 		)
 		(uuid "9aadf318-1322-4622-8f27-b845cb05822a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.463 58.42 0)
+			(at 131.5743 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8717,7 +8717,7 @@
 		)
 	)
 	(global_label "DCCH"
-		(shape bidirectional)
+		(shape output)
 		(at 152.4 85.09 90)
 		(fields_autoplaced yes)
 		(effects
@@ -8728,7 +8728,7 @@
 		)
 		(uuid "b1ce76e2-7798-4fd8-b0cf-41b00a8a8210")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.4 75.853 90)
+			(at 152.4 76.9643 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10207,7 +10207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "266d5c8b-2570-4f99-97f4-ef58ed7a0e4d")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 149.4633 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10448,7 +10448,7 @@
 		(instances
 			(project "PCB-Right"
 				(path "/d27bf40e-f12c-4fc4-af83-8c0622ff945a"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
